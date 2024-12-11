@@ -1,0 +1,30 @@
+{
+  "name": "example",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev:3",
+    "build": "vite build",
+    "preview": "vite preview",
+    "dev:2": "npm run switch:2 && vite",
+    "dev:3": "npm run switch:3 && vite",
+    "switch:2": "npx vue-demi-switch 2 vue2",
+    "switch:3": "npx vue-demi-switch 3 vue3"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vue/compiler-sfc": "^3.5.13",
+    "@vue/composition-api": "^1.7.2",
+    "unplugin-vue2-script-setup": "^0.11.4",
+    "vite-plugin-vue2": "^2.0.3",
+    "vue": "2.6.14",
+    "vue-demi": "^0.14.10",
+    "vue-template-compiler": "2.6.14",
+    "vue2": "npm:vue@2.6.14",
+    "vue3": "npm:vue@^3.5.13"
+  },
+  "devDependencies": {
+    "vite": "^3.2.11",
+    "vite-plugin-vue-devtools": "^7.6.5"
+  }
+}
