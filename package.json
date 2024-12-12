@@ -1,0 +1,42 @@
+{
+  "name": "vue-demi-com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "switch:2": "npx vue-demi-switch 2",
+    "switch:3": "npx vue-demi-switch 3",
+    "build:3": "npm run switch:3 && rollup -c",
+    "build:2": "npm run switch:2 && rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@vue/compiler-sfc": "^3.5.13",
+    "rollup": "^4.28.1",
+    "rollup-plugin-vue": "^6.0.0",
+    "rollup-plugin-vue2": "npm:rollup-plugin-vue@^5.1.9",
+    "rollup-plugin-vue3": "npm:rollup-plugin-vue@^6.0.0-beta.11",
+    "unplugin-vue2-script-setup": "^0.11.4",
+    "vue-demi": "^0.14.10",
+    "vue-template-compiler": "2.6.14"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^2.0.0 || >=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "vue": "2.6.14"
+  }
+}
