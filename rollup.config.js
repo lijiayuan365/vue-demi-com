@@ -21,7 +21,7 @@ export default {
       format: 'cjs'
     }
   ],
-  external: ['vue'],
+  external: ['vue', 'vue-demi'],
   plugins: [
     
     isVue2 ? ScriptSetup() : undefined,
