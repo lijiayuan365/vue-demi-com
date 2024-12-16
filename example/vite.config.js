@@ -15,6 +15,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@com': fileURLToPath(new URL('../src/packages', import.meta.url)),
       vue: isVue2 ? fileURLToPath(new URL('./node_modules/vue2', import.meta.url)) : fileURLToPath(new URL('./node_modules/vue3', import.meta.url))
     },
   },

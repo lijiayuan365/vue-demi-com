@@ -10,6 +10,7 @@ import { ref, } from 'vue-demi'
 //   name: 'Demo',
 // });
 const title = ref('Demoss')
+console.log(title?.value)
 
 </script>
 
